@@ -116,3 +116,23 @@
 .product-body .btn {
   margin-top: auto;
 }
+
+/* ETIQUETAS DE STOCK Y BOTÓN FAVORITOS (Catálogo) */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.badge-stock {
+  background-color: var(--color-primary-dark);
+}
+
+.badge-out {
+  background-color: var(--color-error);
+}
