@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce la historia, principios ecológicos y testimonios de EcoMarket.">
+  <title>Sobre Nosotros | EcoMarket</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+<!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">🌱 EcoMarket</a>
+
+      <div class="header-actions">
+        <a href="productos.html" class="action-link" aria-label="Buscar productos">🔍 Buscar</a>
+        <a href="productos.html" class="action-link" aria-label="Ver carrito de compras">🛒 (0)</a>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">☰</label>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link">Productos</a></li>
+          <li><a href="sobre-nosotros.html" class="nav-link active">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- 1. HISTORIA (Layout Flexbox) -->
+    <section class="section-padding">
+      <div class="container">
+        <h1 class="section-title">Nuestra Historia</h1>
+        <div class="story-flex">
+          <div class="story-img">
+            <img src="../img/hero/historia.jpg" alt="Equipo fundador de EcoMarket trabajando con productores locales">
+          </div>
+          <div class="story-content">
+            <h2>De una inquietud local a una comunidad sostenible</h2>
+            <p>EcoMarket nació con el propósito de acercar alternativas ecológicas reales a los hogares colombianos, eliminando intermediarios innecesarios y garantizando que cada producto respete los ciclos de la naturaleza.</p>
+            <p>Trabajamos de la mano con artesanos y pequeños productores que priorizan materias primas orgánicas, empaques compostables y procesos libres de crueldad.</p>
+            <a href="productos.html" class="btn btn-primary">Conocer el catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 2. PRINCIPIOS ECOLÓGICOS -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Principios Ecológicos</h2>
+        <div class="principles-grid">
+          <article class="principle-card">
+            <img src="../img/icons/sin-plastico.svg" alt="Icono Sin Plástico">
+            <h3>100% Sin Plástico</h3>
+            <p>Nuestros productos y envíos utilizan exclusivamente materiales reciclables o compostables.</p>
+          </article>
+
+          <article class="principle-card">
+            <img src="../img/icons/comercio-justo.svg" alt="Icono Comercio Justo">
+            <h3>Comercio Justo</h3>
+            <p>Remuneración ética y transparente para todas las familias productoras aliadas.</p>
+          </article>
+
+          <article class="principle-card">
+            <img src="../img/icons/biodegradable.svg" alt="Icono Biodegradable">
+            <h3>Biodegradable</h3>
+            <p>Fórmulas e insumos que regresan a la tierra sin dejar microplásticos ni tóxicos.</p>
+          </article>
+
+          <article class="principle-card">
+            <img src="../img/icons/huella-cero.svg" alt="Icono Huella Neutro">
+            <h3>Huella Local</h3>
+            <p>Priorizamos proveedores nacionales para reducir las emisiones por transporte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- 3. TESTIMONIOS (Carrusel CSS + Animación Hover) -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-carousel">
+          <article class="testimonial-card">
+            <div class="client-header">
+              <img src="../img/hero/cliente-1.jpg" alt="Foto de Laura Gómez" class="client-avatar">
+              <div>
+                <h3>Laura Gómez</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p>"El shampoo sólido y los envoltorios de cera de abeja cambiaron por completo mi consumo en casa. Excelente calidad y el empaque llegó sin nada de plástico."</p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="client-header">
+              <img src="../img/hero/cliente-2.jpg" alt="Foto de Carlos Serrano" class="client-avatar">
+              <div>
+                <h3>Carlos Serrano</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p>"Compré el termo de acero y el kit de cubiertos viajeros para llevar a la oficina. Muy resistentes, prácticos y con un diseño minimalista increíble."</p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="client-header">
+              <img src="../img/hero/cliente-3.jpg" alt="Foto de Valentina Rojas" class="client-avatar">
+              <div>
+                <h3>Valentina Rojas</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+            <p>"Me encanta saber exactamente de dónde vienen los productos. El café orgánico de sombra tiene un aroma espectacular."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🌱 EcoMarket</h3>
+          <p>Impulsamos el consumo consciente con productos que cuidan tu hogar y respetan el planeta.</p>
+        </div>
+        <div>
+          <h4>Enlaces Legales</h4>
+          <ul class="footer-links">
+            <li><a href="sobre-nosotros.html">Política de Sostenibilidad</a></li>
+            <li><a href="contacto.html">Términos y Condiciones</a></li>
+            <li><a href="contacto.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto y Redes</h4>
+          <p>📍 Bucaramanga, Colombia</p>
+          <p>✉️ hola@ecomarket.co</p>
+          <div class="social-list">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <img src="../img/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+              <img src="../img/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+              <img src="../img/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

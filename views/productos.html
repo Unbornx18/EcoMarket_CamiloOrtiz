@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de productos ecológicos en EcoMarket.">
+  <title>Catálogo de Productos | EcoMarket</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">🌱 EcoMarket</a>
+
+      <div class="header-actions">
+        <a href="productos.html" class="action-link" aria-label="Buscar productos">🔍 Buscar</a>
+        <a href="productos.html" class="action-link" aria-label="Ver carrito de compras">🛒 (0)</a>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">☰</label>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link active">Productos</a></li>
+          <li><a href="sobre-nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <h1 class="section-title">Catálogo Ecológico</h1>
+
+<!-- Barra Superior: Buscador visual estilizado -->
+      <div class="search-bar-container">
+        <input type="search" class="search-input" placeholder="Buscar por nombre, material o categoría..." aria-label="Buscar en el catálogo">
+        <button type="button" class="btn btn-primary">Buscar</button>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Sidebar de Filtros (Sticky) -->
+        <aside class="filter-sidebar" aria-label="Filtros de catálogo">
+          <div class="filter-group">
+            <h3>Categorías</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked> Hogar (6)</label></li>
+              <li><label><input type="checkbox" checked> Moda (4)</label></li>
+              <li><label><input type="checkbox" checked> Cuidado Personal (6)</label></li>
+              <li><label><input type="checkbox" checked> Alimentos (4)</label></li>
+            </ul>
+          </div>
+
+          <div class="filter-group">
+            <h3>Rango de Precios</h3>
+            <input type="range" min="5000" max="150000" value="95000" class="range-slider" aria-label="Rango de precios">
+            <p>$5.000 - $150.000 COP</p>
+          </div>
+
+          <div class="filter-group">
+            <h3>Disponibilidad</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked> En Stock</label></li>
+              <li><label><input type="checkbox"> Incluir Agotados</label></li>
+            </ul>
+          </div>
+        </aside>
+
+<!-- Grid de 20 Productos (4 cols Desktop -> 2 cols Tablet -> 1 col Móvil) -->
+        <section>
+          <div class="products-grid">
+            <!-- 1 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f1" class="fav-checkbox"><label for="f1" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-1.jpg" alt="Cepillo Dental de Bambú">
+              </div>
+              <div class="product-body">
+                <h3>Cepillo Dental de Bambú</h3>
+                <p class="product-price">$12.000</p>
+                <a href="#f1" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 2 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f2" class="fav-checkbox"><label for="f2" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-2.jpg" alt="Termo EcoAcero 750ml">
+              </div>
+              <div class="product-body">
+                <h3>Termo EcoAcero 750ml</h3>
+                <p class="product-price">$68.000</p>
+                <a href="#f2" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 3 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f3" class="fav-checkbox"><label for="f3" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-3.jpg" alt="Shampoo Sólido Botánico">
+              </div>
+              <div class="product-body">
+                <h3>Shampoo Sólido Botánico</h3>
+                <p class="product-price">$32.000</p>
+                <a href="#f3" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 4 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-out">Agotado</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f4" class="fav-checkbox"><label for="f4" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-4.jpg" alt="Set Bolsas de Algodón">
+              </div>
+              <div class="product-body">
+                <h3>Set Bolsas de Algodón</h3>
+                <p class="product-price">$28.000</p>
+                <a href="#f4" class="btn btn-outline">Sin existencias</a>
+              </div>
+            </article>
+
+<!-- 5 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f5" class="fav-checkbox"><label for="f5" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-5.jpg" alt="Envoltorios Cera de Abeja">
+              </div>
+              <div class="product-body">
+                <h3>Envoltorios Cera de Abeja</h3>
+                <p class="product-price">$35.000</p>
+                <a href="#f5" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 6 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f6" class="fav-checkbox"><label for="f6" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-6.jpg" alt="Kit Cubiertos Viajeros">
+              </div>
+              <div class="product-body">
+                <h3>Kit Cubiertos Viajeros</h3>
+                <p class="product-price">$24.000</p>
+                <a href="#f6" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 7 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f7" class="fav-checkbox"><label for="f7" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-7.jpg" alt="Esponja Vegetal Luffa">
+              </div>
+              <div class="product-body">
+                <h3>Esponja Vegetal Luffa</h3>
+                <p class="product-price">$9.500</p>
+                <a href="#f7" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 8 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f8" class="fav-checkbox"><label for="f8" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-8.jpg" alt="Acondicionador Sólido Coco">
+              </div>
+              <div class="product-body">
+                <h3>Acondicionador Sólido Coco</h3>
+                <p class="product-price">$34.000</p>
+                <a href="#f8" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 9 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-out">Agotado</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f9" class="fav-checkbox"><label for="f9" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-9.jpg" alt="Camiseta Cáñamo Orgánico">
+              </div>
+              <div class="product-body">
+                <h3>Camiseta Cáñamo Orgánico</h3>
+                <p class="product-price">$75.000</p>
+                <a href="#f9" class="btn btn-outline">Sin existencias</a>
+              </div>
+            </article>
+
+<!-- 10 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f10" class="fav-checkbox"><label for="f10" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-10.jpg" alt="Jabón Artesanal de Avena">
+              </div>
+              <div class="product-body">
+                <h3>Jabón Artesanal de Avena</h3>
+                <p class="product-price">$15.000</p>
+                <a href="#f10" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 11 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f11" class="fav-checkbox"><label for="f11" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-11.jpg" alt="Café Orgánico de Sombra">
+              </div>
+              <div class="product-body">
+                <h3>Café Orgánico de Sombra</h3>
+                <p class="product-price">$38.000</p>
+                <a href="#f11" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 12 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f12" class="fav-checkbox"><label for="f12" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-12.jpg" alt="Miel Pura de Monte 500g">
+              </div>
+              <div class="product-body">
+                <h3>Miel Pura de Monte 500g</h3>
+                <p class="product-price">$29.000</p>
+                <a href="#f12" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 13 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f13" class="fav-checkbox"><label for="f13" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-13.jpg" alt="Detergente Biodegradable 1L">
+              </div>
+              <div class="product-body">
+                <h3>Detergente Biodegradable 1L</h3>
+                <p class="product-price">$26.000</p>
+                <a href="#f13" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 14 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f14" class="fav-checkbox"><label for="f14" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-14.jpg" alt="Tote Bag Algodón Reciclado">
+              </div>
+              <div class="product-body">
+                <h3>Tote Bag Algodón Reciclado</h3>
+                <p class="product-price">$22.000</p>
+                <a href="#f14" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 15 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-out">Agotado</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f15" class="fav-checkbox"><label for="f15" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-15.jpg" alt="Gafas de Sol en Madera">
+              </div>
+              <div class="product-body">
+                <h3>Gafas de Sol en Madera</h3>
+                <p class="product-price">$115.000</p>
+                <a href="#f15" class="btn btn-outline">Sin existencias</a>
+              </div>
+            </article>
+
+<!-- 16 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f16" class="fav-checkbox"><label for="f16" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-16.jpg" alt="Desodorante Natural en Crema">
+              </div>
+              <div class="product-body">
+                <h3>Desodorante Natural Crema</h3>
+                <p class="product-price">$25.000</p>
+                <a href="#f16" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 17 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f17" class="fav-checkbox"><label for="f17" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-17.jpg" alt="Discos Desmaquillantes Lavables">
+              </div>
+              <div class="product-body">
+                <h3>Discos Desmaquillantes x10</h3>
+                <p class="product-price">$31.000</p>
+                <a href="#f17" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 18 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f18" class="fav-checkbox"><label for="f18" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-18.jpg" alt="infusión Orgánica Relajante">
+              </div>
+              <div class="product-body">
+                <h3>Infusión Orgánica Floral</h3>
+                <p class="product-price">$19.000</p>
+                <a href="#f18" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 19 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f19" class="fav-checkbox"><label for="f19" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-19.jpg" alt="Compostera Doméstica Compacta">
+              </div>
+              <div class="product-body">
+                <h3>Compostera Doméstica 15L</h3>
+                <p class="product-price">$135.000</p>
+                <a href="#f19" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+
+<!-- 20 -->
+            <article class="product-card">
+              <div class="product-img-wrapper">
+                <span class="badge badge-stock">En Stock</span>
+                <div class="fav-wrapper"><input type="checkbox" id="f20" class="fav-checkbox"><label for="f20" class="btn-fav" title="Favorito">♥</label></div>
+                <img src="../img/products/prod-20.jpg" alt="Quinua Real Orgánica 500g">
+              </div>
+              <div class="product-body">
+                <h3>Quinua Real Orgánica 500g</h3>
+                <p class="product-price">$18.500</p>
+                <a href="#f20" class="btn btn-outline">Añadir al carrito</a>
+              </div>
+            </article>
+          </div>
+
+<!-- Paginación Visual -->
+          <nav class="pagination" aria-label="Paginación de productos">
+            <a href="#top" class="page-link">« Anterior</a>
+            <a href="#top" class="page-link active">1</a>
+            <a href="#top" class="page-link">2</a>
+            <a href="#top" class="page-link">3</a>
+            <a href="#top" class="page-link">Siguiente »</a>
+          </nav>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🌱 EcoMarket</h3>
+          <p>Impulsamos el consumo consciente con productos que cuidan tu hogar y respetan el planeta.</p>
+        </div>
+        <div>
+          <h4>Enlaces Legales</h4>
+          <ul class="footer-links">
+            <li><a href="sobre-nosotros.html">Política de Sostenibilidad</a></li>
+            <li><a href="contacto.html">Términos y Condiciones</a></li>
+            <li><a href="contacto.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto y Redes</h4>
+          <p>📍 Bucaramanga, Colombia</p>
+          <p>✉️ hola@ecomarket.co</p>
+          <div class="social-list">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <img src="../img/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+              <img src="../img/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+              <img src="../img/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

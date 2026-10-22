@@ -1,52 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EcoMarket - Tienda en línea de productos ecológicos, reutilizables y sustentables.">
-    <title>EcoMarket | Compra responsable, vive sostenible</title>
-    
-<!-- Conexión a las 4 hojas de estilo obligatorias -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoMarket - Tienda en línea de productos ecológicos, reutilizables y sustentables.">
+  <title>EcoMarket | Compra responsable, vive sostenible</title>
 
-<link rel="Stylesheet" href="css/main.css">
-<link rel="Stylesheet" href="css/animations.css">
-<link rel="Stylesheet" href="css/layout.css">
-<link rel="Stylesheet" href="components.css">
-
+  <!-- Conexión a las 4 hojas de estilo obligatorias -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
 
-<!-- ENCABEZADO (Header) -->
+  <!-- 1. ENCABEZADO (Header) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🌱 EcoMarket</a>
 
-<header class="site-header">
-    <div class="container header-container">
-        <a href="index.html" class="logo">EcoMarket</a>
+      <!-- Accesos directos (Búsqueda y Carrito) + Botón Hamburguesa Móvil -->
+      <div class="header-actions">
+        <a href="views/productos.html" class="action-link" aria-label="Buscar productos">🔍 Buscar</a>
+        <a href="views/productos.html" class="action-link" aria-label="Ver carrito de compras">🛒 (0)</a>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">☰</label>
+      </div>
 
-        <!-- Acceso directos (Busqueda y carrito) -->
+      <!-- Checkbox oculto para abrir/cerrar el menú en móvil sin JavaScript -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-        <div class="header-actions">
-            <a href="views/productos.html" class="action-link" aria-label="Buscar productos">
-            <a href="views/productos.html" class="action-link" aria-label="Ver carrito de compras">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú de navegación">
-        </div>
-
-<!-- Checkbox oculto para abrir/cerrar el menú en móvil sin JavaScript -->
-<input type="checkbox" id="nav-toggle" class="nav-toggle">
-
-<!-- Menú de navegación -->
-
-    <nav class="main-nav" aria-label="Navegación principal">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="views/productos.html">Productos</a></li>
-            <li><a href="views/nosotros.html">Nosotros</a></li>
-            <li><a href="views/contacto.html">Contacto</a></li>
+      <!-- Menú de navegación -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="views/productos.html" class="nav-link">Productos</a></li>
+          <li><a href="views/sobre-nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="views/contacto.html" class="nav-link">Contacto</a></li>
         </ul>
-    </nav>
-</div>
+      </nav>
+    </div>
+  </header>
 
-<!-- CONTENIDO PRINCIPAL -->
-<main>
+  <main>
+    <!-- 2. BANNER PRINCIPAL (Hero) -->
+    <section class="hero-banner">
+      <img src="img/hero/banner-principal.jpg" alt="Productos ecológicos y naturaleza" class="hero-bg">
+      <div class="hero-content">
+        <h1>Compra responsable, vive sostenible</h1>
+        <p>Alternativas 100% ecológicas, libres de plástico y de comercio justo para transformar tu rutina diaria.</p>
+        <a href="views/productos.html" class="btn btn-primary">Explorar productos</a>
+      </div>
+    </section>
+
+    <!-- 3. PRODUCTOS DESTACADOS (Grid de 6 tarjetas) -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Productos Destacados</h2>
+
+        <div class="featured-grid">
+          <!-- Producto 1 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-1.jpg" alt="Cepillo de dientes de bambú">
+            </div>
+            <div class="product-body">
+              <h3>Cepillo Dental de Bambú</h3>
+              <p>Mango 100% biodegradable con cerdas suaves libres de BPA.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-2.jpg" alt="Botella térmica de acero inoxidable">
+            </div>
+            <div class="product-body">
+              <h3>Termo EcoAcero 750ml</h3>
+              <p>Conserva tus bebidas frías por 24h o calientes por 12h sin residuos.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-3.jpg" alt="Shampoo sólido natural">
+            </div>
+            <div class="product-body">
+              <h3>Shampoo Sólido Botánico</h3>
+              <p>Rinde hasta 80 lavados. Elaborado con aceites esenciales orgánicos.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-4.jpg" alt="Bolsas de algodón orgánico">
+            </div>
+            <div class="product-body">
+              <h3>Set Bolsas de Algodón</h3>
+              <p>Pack de 4 bolsas reutilizables de malla para frutas, verduras y granel.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-5.jpg" alt="Envoltorios de cera de abeja">
+            </div>
+            <div class="product-body">
+              <h3>Envoltorios Cera de Abeja</h3>
+              <p>Sustituto natural y lavable al plástico adherente de cocina.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <img src="img/products/prod-6.jpg" alt="Kit cubiertos de bambú">
+            </div>
+            <div class="product-body">
+              <h3>Kit Cubiertos Viajeros</h3>
+              <p>Incluye tenedor, cuchillo, cuchara, pitillo y cepillo limpiador en estuche.</p>
+              <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. PIE DE PÁGINA (Footer) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🌱 EcoMarket</h3>
+          <p>Impulsamos el consumo consciente con productos que cuidan tu hogar y respetan el planeta.</p>
+        </div>
+        <div>
+          <h4>Enlaces Legales</h4>
+          <ul class="footer-links">
+            <li><a href="views/sobre-nosotros.html">Política de Sostenibilidad</a></li>
+            <li><a href="views/contacto.html">Términos y Condiciones</a></li>
+            <li><a href="views/contacto.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto y Redes</h4>
+          <p>📍 Bucaramanga, Colombia</p>
+          <p>✉️ hola@ecomarket.co</p>
+          <div class="social-list">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <img src="img/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+              <img src="img/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+              <img src="img/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
 
 
 
@@ -65,7 +193,7 @@
 
 
 
-    
+
 </main>
 </body>
 </html>
