@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Trayectoria superior para "NET" (sentido horario) -->
+    <path id="net-path" d="M 98,250 A 152,152 0 1,1 402,250" />
+    
+    <!-- Trayectoria inferior para "ZERO" (sentido antihorario para leerse al derecho) -->
+    <path id="zero-path" d="M 80,250 A 170,170 0 1,0 420,250" />
+
+    <!-- Estrella de 5 puntas -->
+    <polygon id="star" points="0,-16 4.5,-5 16,-4 7.5,3.5 10,15 0,9 -10,15 -7.5,3.5 -16,-4 -4.5,-5" fill="#64a70b" />
+  </defs>
+
+  <!-- 1. ANILLOS EXTERIOR E INTERIOR -->
+  <circle cx="250" cy="250" r="205" fill="none" stroke="#64a70b" stroke-width="11" />
+  <circle cx="250" cy="250" r="120" fill="none" stroke="#64a70b" stroke-width="11" />
+
+  <!-- 2. ARCOS DECORATIVOS INTERMEDIOS (r = 162.5) -->
+  <g fill="none" stroke="#64a70b" stroke-width="10" stroke-linecap="round">
+    <!-- Superior izquierdo -->
+    <path d="M 91,218 A 162.5,162.5 0 0,1 154,119" />
+    <!-- Superior derecho -->
+    <path d="M 346,119 A 162.5,162.5 0 0,1 409,218" />
+    <!-- Inferior izquierdo -->
+    <path d="M 154,381 A 162.5,162.5 0 0,1 91,282" />
+    <!-- Inferior derecho -->
+    <path d="M 409,282 A 162.5,162.5 0 0,1 346,381" />
+  </g>
+
+  <!-- 3. ESTRELLAS LATERALES -->
+  <use href="#star" transform="translate(88, 250)" />
+  <use href="#star" transform="translate(412, 250)" />
+
+  <!-- 4. TEXTOS CURVOS ("NET" Y "ZERO") -->
+  <text fill="#64a70b" font-family="&#39;Segoe UI&#39;, Montserrat, Roboto, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="4">
+    <textPath href="#net-path" startOffset="50%" text-anchor="middle">
+      NET
+    </textPath>
+  </text>
+
+  <text fill="#64a70b" font-family="&#39;Segoe UI&#39;, Montserrat, Roboto, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="4">
+    <textPath href="#zero-path" startOffset="50%" text-anchor="middle">
+      ZERO
+    </textPath>
+  </text>
+
+  <!-- 5. ÍCONO CENTRAL DE TRES HOJAS -->
+  <g fill="none" stroke="#64a70b" stroke-width="11" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Hoja central -->
+    <path d="M 250,332 C 216,272 218,215 250,168 C 282,215 284,272 250,332 Z" />
+    <!-- Hoja izquierda -->
+    <path d="M 250,332 C 190,322 160,280 160,214 C 212,226 244,265 250,332 Z" />
+    <!-- Hoja derecha -->
+    <path d="M 250,332 C 310,322 340,280 340,214 C 288,226 256,265 250,332 Z" />
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 540" width="100%" height="100%">
+  <!-- Fondo negro principal -->
+  <rect width="400" height="540" rx="14" fill="#000000" />
+
+  <!-- SÍMBOLO CENTRAL FAIRTRADE -->
+  <g>
+    <!-- 1. Hoja inferior izquierda (Verde lima) -->
+    <path d="M 70,82 C 18,175 25,288 148,346 C 165,308 160,262 115,212 C 78,170 64,132 70,82 Z" fill="#9be600" />
+    <!-- Contorno interior negro de la hoja verde -->
+    <path d="M 67,98 C 26,178 32,278 142,336 C 156,304 150,264 109,218 C 74,178 61,142 67,98 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" />
+
+    <!-- 2. Forma superior derecha (Azul cian / turquesa) -->
+    <path d="M 118,35 C 215,-5 352,42 368,188 C 374,232 358,266 334,294 C 338,242 295,208 212,174 C 118,136 82,92 118,35 Z" fill="#2ce6e6" />
+    <!-- Contorno interior negro de la forma azul -->
+    <path d="M 124,43 C 212,6 340,50 356,186 C 361,224 348,254 334,278 C 334,232 290,198 208,165 C 122,130 92,90 124,43 Z" fill="none" stroke="#000000" stroke-width="3.2" stroke-linejoin="round" />
+
+    <!-- 3. Círculo central (Cabeza de la figura) -->
+    <!-- Borde cian exterior con línea negra interna -->
+    <circle cx="232" cy="136" r="51" fill="#000000" stroke="#000000" stroke-width="3.2" />
+    <circle cx="232" cy="136" r="44" fill="#000000" stroke="#2ce6e6" stroke-width="3.5" />
+  </g>
+
+  <!-- SECCIÓN DE TEXTO Y LÍNEA DIVISORIA -->
+  <!-- Texto: FAIRTRADE -->
+  <text x="200" y="422" fill="#ffffff" font-family="&#39;Arial Black&#39;, &#39;Montserrat&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-size="55" font-weight="900" text-anchor="middle" letter-spacing="2">
+    FAIRTRADE
+  </text>
+
+  <!-- Línea blanca horizontal -->
+  <line x1="0" y1="452" x2="400" y2="452" stroke="#ffffff" stroke-width="5.5" />
+
+  <!-- Texto: COMERCIO JUSTO -->
+  <text x="200" y="512" fill="#ffffff" font-family="&#39;Arial Narrow&#39;, &#39;Roboto Condensed&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="44" font-weight="700" text-anchor="middle" letter-spacing="1.5" transform="scale(0.88, 1.05)" transform-origin="200 512">
+    COMERCIO JUSTO
+  </text>
+</svg>
