@@ -144,3 +144,48 @@
   gap: 1.5rem;
 }
 
+/* 5. LAYOUT CONTACTO */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* 6. PIE DE PÁGINA (Footer) */
+.site-footer {
+  background-color: #1e2b24;
+  color: var(--color-earth);
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.site-footer p,
+.site-footer a {
+  color: var(--color-earth);
+  font-size: 0.95rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 245, 220, 0.15);
+  font-size: 0.85rem;
+}
+
