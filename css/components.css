@@ -136,3 +136,37 @@
 .badge-out {
   background-color: var(--color-error);
 }
+
+/* Botón Favoritos interactivo en CSS puro (:active, :target y checkbox) */
+.fav-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fav-checkbox {
+  display: none;
+}
+
+.btn-fav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: #bdc3c7;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  user-select: none;
+}
+
+.btn-fav:active,
+.btn-fav:target,
+.fav-checkbox:checked + .btn-fav {
+  color: var(--color-error);
+  background-color: #fdecea;
+  transform: scale(1.15);
+}
