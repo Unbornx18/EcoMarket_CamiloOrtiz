@@ -250,3 +250,62 @@
   color: var(--color-white);
   border-color: var(--color-primary-dark);
 }
+
+/* PRINCIPIOS ECOLÓGICOS Y CARRUSEL TESTIMONIOS */
+.principle-card {
+  background-color: var(--color-white);
+  padding: 1.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.principle-card img {
+  margin: 0 auto 1rem;
+}
+
+.testimonials-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background-color: var(--color-white);
+  padding: 1.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+@media (min-width: 1024px) {
+  .testimonial-card {
+    flex: 1;
+  }
+}
+
+.client-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.client-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+}
+
+.stars {
+  color: #f1c40f;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
