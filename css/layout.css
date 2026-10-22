@@ -1,0 +1,266 @@
+/* =========================================
+   LAYOUT.CSS - Estructura, Grids y Responsive
+   ========================================= */
+
+.container {
+  width: 92%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 3.5rem 0;
+}
+
+/* 1. ENCABEZADO (Mobile First) */
+.site-header {
+  background-color: var(--color-white);
+  border-bottom: 2px solid var(--color-earth);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.action-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-earth);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  color: var(--color-primary-dark);
+  user-select: none;
+}
+
+.main-nav {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.nav-toggle:checked ~ .main-nav {
+  max-height: 300px;
+  margin-top: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* 2. GRID PRODUCTOS DESTACADOS (HOME) - Mobile First: 1 col */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+/* 3. LAYOUT CATÁLOGO (Sidebar + Grid 20 productos) */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Móvil: 1 columna */
+  gap: 1.5rem;
+}
+
+/* 4. LAYOUT SOBRE NOSOTROS (Flexbox) */
+.story-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.story-img,
+.story-content {
+  flex: 1;
+}
+
+.story-img img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  object-fit: cover;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* 5. LAYOUT CONTACTO */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* 6. PIE DE PÁGINA (Footer) */
+.site-footer {
+  background-color: #1e2b24;
+  color: var(--color-earth);
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.site-footer p,
+.site-footer a {
+  color: var(--color-earth);
+  font-size: 0.95rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 245, 220, 0.15);
+  font-size: 0.85rem;
+}
+
+/* =========================================
+   MEDIA QUERIES (Tablet >= 768px)
+   ========================================= */
+@media (min-width: 768px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .main-nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    order: 2;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columnas */
+  }
+
+  .story-flex {
+    flex-direction: row;
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================================
+   MEDIA QUERIES (Desktop >= 1024px)
+   ========================================= */
+@media (min-width: 1024px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .catalog-layout {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .filter-sidebar {
+    position: sticky;
+    top: 90px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columnas */
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
