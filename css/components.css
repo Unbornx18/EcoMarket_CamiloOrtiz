@@ -309,3 +309,32 @@
   font-size: 1rem;
   letter-spacing: 2px;
 }
+
+/* FORMULARIO INTELIGENTE CON VALIDACIÓN CSS (:valid / :invalid) */
+.contact-card {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--color-earth-light);
+  outline: none;
+}
