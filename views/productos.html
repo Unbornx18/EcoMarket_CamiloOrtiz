@@ -40,3 +40,37 @@
   <main class="section-padding">
     <div class="container">
       <h1 class="section-title">Catálogo Ecológico</h1>
+
+<!-- Barra Superior: Buscador visual estilizado -->
+      <div class="search-bar-container">
+        <input type="search" class="search-input" placeholder="Buscar por nombre, material o categoría..." aria-label="Buscar en el catálogo">
+        <button type="button" class="btn btn-primary">Buscar</button>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Sidebar de Filtros (Sticky) -->
+        <aside class="filter-sidebar" aria-label="Filtros de catálogo">
+          <div class="filter-group">
+            <h3>Categorías</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked> Hogar (6)</label></li>
+              <li><label><input type="checkbox" checked> Moda (4)</label></li>
+              <li><label><input type="checkbox" checked> Cuidado Personal (6)</label></li>
+              <li><label><input type="checkbox" checked> Alimentos (4)</label></li>
+            </ul>
+          </div>
+
+          <div class="filter-group">
+            <h3>Rango de Precios</h3>
+            <input type="range" min="5000" max="150000" value="95000" class="range-slider" aria-label="Rango de precios">
+            <p>$5.000 - $150.000 COP</p>
+          </div>
+
+          <div class="filter-group">
+            <h3>Disponibilidad</h3>
+            <ul class="filter-list">
+              <li><label><input type="checkbox" checked> En Stock</label></li>
+              <li><label><input type="checkbox"> Incluir Agotados</label></li>
+            </ul>
+          </div>
+        </aside>
