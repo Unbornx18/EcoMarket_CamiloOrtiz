@@ -115,3 +115,32 @@
   gap: 1.5rem;
 }
 
+/* 4. LAYOUT SOBRE NOSOTROS (Flexbox) */
+.story-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.story-img,
+.story-content {
+  flex: 1;
+}
+
+.story-img img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  object-fit: cover;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
