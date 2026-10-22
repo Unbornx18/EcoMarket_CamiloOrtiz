@@ -189,3 +189,53 @@
   font-size: 0.85rem;
 }
 
+/* =========================================
+   MEDIA QUERIES (Tablet >= 768px)
+   ========================================= */
+@media (min-width: 768px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .main-nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    order: 2;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columnas */
+  }
+
+  .story-flex {
+    flex-direction: row;
+  }
+
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
