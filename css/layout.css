@@ -93,3 +93,25 @@
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+
+/* 2. GRID PRODUCTOS DESTACADOS (HOME) - Mobile First: 1 col */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+/* 3. LAYOUT CATÁLOGO (Sidebar + Grid 20 productos) */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Móvil: 1 columna */
+  gap: 1.5rem;
+}
+
