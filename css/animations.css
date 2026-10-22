@@ -17,3 +17,13 @@ CSS
 .hero-content {
   animation: fadeInUp 0.7s ease-out forwards;
 }
+
+/* Transiciones globales suaves */
+.btn,
+.nav-link,
+.action-link,
+.page-link,
+.btn-fav,
+.form-control {
+  transition: all 0.25s ease;
+}
