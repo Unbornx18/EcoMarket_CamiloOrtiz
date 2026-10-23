@@ -95,6 +95,32 @@ Durante el desarrollo del proyecto se superaron diversos retos propios de la maq
 - **Solución:** Se implementó **CSS Grid** con la propiedad adaptable `grid-template-columns: repeat(4, 1fr)` en escritorios, reduciéndose a `repeat(2, 1fr)` en tablets mediante *media queries* (a partir de 768px) y a una sola columna `1fr` en teléfonos móviles, asegurando además que todas las tarjetas posean una estructura interna de altura flexible basada en Flexbox (`display: flex; flex-direction: column;`).
 
 ---
+# 🛒 EcoMarket - Tienda en Línea Sostenible
+
+Proyecto web desarrollado para la gestión y visualización de una tienda en línea enfocada en productos ecológicos, reutilizables y sustentables[cite: 1, 3].
+
+## 📸 Evidencias y Pantallazos del Proyecto
+
+A continuación se muestran las capturas de pantalla que evidencian el funcionamiento y la interfaz de la plataforma desplegada en GitHub Pages:
+
+### 1. Vista Principal / Productos Destacados
+* **Descripción:** Visualización de la página de inicio con el banner principal y la sección de productos destacados.
+* **Captura:**
+  ![Vista Principal](img/evidencias/pantallazo-inicio.png)
+  ![Vista Principal](img/evidencias/pantallazo_parte_baja-inicio.png)
+  ![Vista Principal](img/evidencias/pantallazo-productos.png)
+  ![Vista Principal](img/evidencias/pantallazo-nosotros.png)
+  ![Vista Principal](img/evidencias/pantallazo-contacto.png)
+  ![Vista Principal](img/evidencias/pantallazo-inicio-celular.png)
+  ![Vista Principal](img/evidencias/pantallazo-contactanos-celular.png)
+  ![Vista Principal](img/evidencias/pantallazo-historia-celular.png)
+  ![Vista Principal](img/evidencias/patanllazo-banner-celular.png)
+
+
+
+
+
+
 
 ## 6. Estructura de Archivos del Repositorio
 
